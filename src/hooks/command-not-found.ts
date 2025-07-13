@@ -2,8 +2,6 @@
 
 import type {Hook} from '@oclif/core'
 
-const hook: Hook.CommandNotFound = async (opts) => {
-  await opts.config.runCommand('hello', opts.argv);
-}
+const hook: Hook.CommandNotFound = async (opts) => opts.config.runCommand('init', opts.argv)
 
 export default hook;

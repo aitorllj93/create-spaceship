@@ -20,7 +20,7 @@ $ npm install -g create-spaceship
 $ create-spaceship COMMAND
 running command...
 $ create-spaceship (--version)
-create-spaceship/0.0.0 darwin-arm64 node-v22.15.0
+create-spaceship/0.0.2 darwin-arm64 node-v22.15.0
 $ create-spaceship --help [COMMAND]
 USAGE
   $ create-spaceship COMMAND
@@ -32,6 +32,7 @@ USAGE
 * [`create-spaceship hello PERSON`](#create-spaceship-hello-person)
 * [`create-spaceship hello world`](#create-spaceship-hello-world)
 * [`create-spaceship help [COMMAND]`](#create-spaceship-help-command)
+* [`create-spaceship init [DIR]`](#create-spaceship-init-dir)
 * [`create-spaceship plugins`](#create-spaceship-plugins)
 * [`create-spaceship plugins add PLUGIN`](#create-spaceship-plugins-add-plugin)
 * [`create-spaceship plugins:inspect PLUGIN...`](#create-spaceship-pluginsinspect-plugin)
@@ -65,7 +66,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.0/src/commands/hello/index.ts)_
+_See code: [src/commands/hello/index.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/hello/index.ts)_
 
 ## `create-spaceship hello world`
 
@@ -83,7 +84,7 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [src/commands/hello/world.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.0/src/commands/hello/world.ts)_
+_See code: [src/commands/hello/world.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/hello/world.ts)_
 
 ## `create-spaceship help [COMMAND]`
 
@@ -104,6 +105,29 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.31/src/commands/help.ts)_
+
+## `create-spaceship init [DIR]`
+
+Initialises a new spaceship
+
+```
+USAGE
+  $ create-spaceship init [DIR] [-d <value>]
+
+ARGUMENTS
+  DIR  directory for the new spaceship
+
+FLAGS
+  -d, --dir=<value>  directory for the new spaceship
+
+DESCRIPTION
+  Initialises a new spaceship
+
+EXAMPLES
+  $ create-spaceship init
+```
+
+_See code: [src/commands/init.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/init.ts)_
 
 ## `create-spaceship plugins`
 
