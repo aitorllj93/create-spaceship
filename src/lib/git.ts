@@ -15,7 +15,7 @@ export const clone = async (
   onInfo?: (info: Info) => void,  
 ) => {
   const emitter = degit(repo, {
-    cache: true,
+    cache: false,
     force: true,
     verbose: true,
   })

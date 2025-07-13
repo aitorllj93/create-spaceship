@@ -3,7 +3,7 @@ import { spawn as childSpawn } from "node:child_process";
 export const spawn = (
   command: string,
   args: string[],
-  cwd: string,
+  cwd: string = process.cwd(),
   onData?: (data: string) => void,
 ) => new Promise((resolve, reject) => {
   const npm = childSpawn(command, args, { cwd });
