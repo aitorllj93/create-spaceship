@@ -3,7 +3,8 @@ import { Args, Command, Flags } from '@oclif/core'
 import path from 'node:path'
 import { adjectives, animals, uniqueNamesGenerator } from 'unique-names-generator';
 
-import { clone } from '../lib/git.js'
+import { add, clone, commit, init } from '../lib/git.js'
+import { installDependencies } from '../lib/node.js';
 
 export default class Init extends Command {
   static override args = {
@@ -27,19 +28,26 @@ export default class Init extends Command {
         dictionaries: [adjectives, animals],
         length: 2,
         separator: '-',
-      });
+      })
       dir = await input({
         default: `./${randomDirName}`,
         message: 'Enter directory for the new spaceship'
-      });
+      })
     }
 
     try {
-      this.log(`Initialising spaceship at ${dir}`);
+      this.log(`Initialising spaceship at ${dir}`)
 
-      const dest = path.resolve(dir);
+      const dest = path.resolve(dir)
 
       await clone('aitorllj93/astro-theme-spaceship', dest, (info) => this.debug(info.message))
+      await init(dest)
+      await add(dest)
+      await commit(dest, 'Initial commit')
+
+      this.log('Now installing dependencies...')
+
+      await installDependencies(dest, (info) => this.debug(info));
 
       this.log(`Spaceship succesfully initialised at ${dir}`)
     } catch (error) {

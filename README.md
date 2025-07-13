@@ -20,7 +20,7 @@ $ npm install -g create-spaceship
 $ create-spaceship COMMAND
 running command...
 $ create-spaceship (--version)
-create-spaceship/0.0.2 darwin-arm64 node-v22.15.0
+create-spaceship/0.0.3 darwin-arm64 node-v22.15.0
 $ create-spaceship --help [COMMAND]
 USAGE
   $ create-spaceship COMMAND
@@ -66,7 +66,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/hello/index.ts)_
+_See code: [src/commands/hello/index.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.3/src/commands/hello/index.ts)_
 
 ## `create-spaceship hello world`
 
@@ -84,7 +84,7 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [src/commands/hello/world.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/hello/world.ts)_
+_See code: [src/commands/hello/world.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.3/src/commands/hello/world.ts)_
 
 ## `create-spaceship help [COMMAND]`
 
@@ -127,7 +127,7 @@ EXAMPLES
   $ create-spaceship init
 ```
 
-_See code: [src/commands/init.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.2/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/aitorllj93/create-spaceship/blob/v0.0.3/src/commands/init.ts)_
 
 ## `create-spaceship plugins`
 
