@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/commands/init.ts","./src/commands/hello/index.ts","./src/commands/hello/world.ts","./src/hooks/command-not-found.ts","./src/lib/git.ts","./src/lib/node.ts","./src/lib/process.ts"],"version":"5.8.3"}
+{"root":["./src/index.ts","./src/commands/init.ts","./src/commands/config/get.ts","./src/commands/config/set.ts","./src/commands/hello/index.ts","./src/commands/hello/world.ts","./src/hooks/command-not-found.ts","./src/lib/config.ts","./src/lib/git.ts","./src/lib/node.ts","./src/lib/process.ts","./src/lib/vault.ts"],"version":"5.8.3"}
